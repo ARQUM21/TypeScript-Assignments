@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Poppins font apply karna */
+        }
+    </style>
+
+
+    <div id="quiz_container"  class="container p-6" >
+        <h1 class="bg-gray-200 text-2xl text-center p-5 font-bold">Typescript Quizzes</h1>
+  
+    <div class="flex mt-4" >
+        
+        <h2 id="question"   class="text-2xl p-5 font-bold"></h2>
+    </div>
+
+    <div  id="radio-input-container" class="flex flex-col">
+        <label class="my-2">
+            <input type="radio"  name="question-1" value="abc" />
+            <span  class="pl-2">ABC</span>
+        </label>
+        <label class="my-2" >
+            <input type="radio"  name="question-1" value="abcd" />
+            <span  class="pl-2">ABCD</span>
+        </label>
+        <label class="my-2" >
+            <input type="radio"  name="question-1" value="abcde" />
+            <span  class="pl-2">ABCDE</span>
+        </label>
+        <label class="my-2" >
+            <input type="radio"  name="question-1" value="abcdef" />
+            <span  class="pl-2">ABCDEF</span>
+        </label>
+    </div>
+    <div class="flex justify-end mt-20">
+        <button id="back_btn" class="bg-blue-500 text-white font-bold p-2 px-4 rounded-md shadow hover:bg-blue-600 transition duration-200 mx-2">
+            BACK
+        </button>
+        <button id="next_btn" class="bg-blue-500 text-white font-bold p-2 px-4 rounded-md shadow hover:bg-blue-600 transition duration-200 mx-2">
+            NEXT
+        </button>
+    </div>
+
+</div>
+<div  id="result_container"  style="display: none;"></div>
+
+
+
+    <script src="/dist/index.js"></script>
+</body>
+</html>
